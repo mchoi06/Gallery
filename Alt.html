@@ -25,41 +25,41 @@
 <script>    
     
 $('document').ready(function(){
-    var gallery = [];
+    var window.gallery = [];
 
-    var Latios = new Object();
-    Latios.Name = "Latios";
-    Latios.Price = '0';
-    Latios.Small = "Latios.jpg";
-    gallery.push(Latios);
+    var window.Latios = new Object();
+    window.Latios.Name = "Latios";
+    window.Latios.Price = '0';
+    window.Latios.Small = "Latios.jpg";
+    window.gallery.push(Latios);
     
 
-    var Latias = new Object();
-    Latias.Name = "Latias";
-    Latias.Price = '0';
-    Latias.Small = "Latias.jpg";
-    gallery.push(Latias);
+    var window.Latias = new Object();
+    window.Latias.Name = "Latias";
+    window.Latias.Price = '0';
+    window.Latias.Small = "Latias.jpg";
+    window.gallery.push(Latias);
     
-    var Rayquaza = new Object();
-    Rayquaza.Name = "Rayquaza";
-    Rayquaza.Price = '0';
-    Rayquaza.Small = "Rayquaza.jpg";
-    gallery.push(Rayquaza);
+    var window.Rayquaza = new Object();
+    window.Rayquaza.Name = "Rayquaza";
+    window.Rayquaza.Price = '0';
+    window.Rayquaza.Small = "Rayquaza.jpg";
+    window.gallery.push(Rayquaza);
     
-    var Groudon = new Object();
-    Groudon.Name = "Groudon";
-    Groudon.Price = '0';
-    Groudon.Small = "Groudon.jpg";
-    gallery.push(Groudon);
+    var window.Groudon = new Object();
+    window.Groudon.Name = "Groudon";
+    window.Groudon.Price = '0';
+    window.Groudon.Small = "Groudon.jpg";
+    window.gallery.push(Groudon);
 
-    var Kyogre = new Object();
-    Kyogre.Name = "Kyogre";
-    Kyogre.Price = '0';
-    Kyogre.Small = "Kyogre.jpg";
-    gallery.push(Kyogre);
+    var window.Kyogre = new Object();
+    window.Kyogre.Name = "Kyogre";
+    window.Kyogre.Price = '0';
+    window.Kyogre.Small = "Kyogre.jpg";
+    window.gallery.push(Kyogre);
     
     $('img').click(function(){
-        for (i=0;i<gallery.length;i++){
+        for (i=0;i<window.gallery.length;i++){
             if ($('img').src == window.gallery[i].Small) {
                 alert('Title: ' + window.gallery[i].Name);
             };
