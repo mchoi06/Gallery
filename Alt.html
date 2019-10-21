@@ -58,7 +58,8 @@ $('document').ready(function(){
     $('img').click(function(){
         alert(''+gallery[0].Small+gallery[0].Price+gallery[0].Name);
         for (i=0;i<gallery.length;i++){
-            alert(''+gallery[i].Small+gallery[i].Price+gallery[i].Name);
+            /*alert(''+gallery[i].Small+gallery[i].Price+gallery[i].Name);*/
+            alert(''+$('img').src);
             if (''+gallery[i].Small == $('img').src) {
                 alert('YESS');
             }
