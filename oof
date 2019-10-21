@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style type="text/css">
+    h1 {
+        text-align: center;
+    }
+    a img {
+        width: 125px;
+        height: 100px;
+    }
+    
+    div img {
+        width: 375px;
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+    
+    <h1> Art Gallery </h1>
+
+<script>    
+
+$('document').ready(function(){
+    var gallery = [];
+    
+    var Latios = new Object();
+    Latios.Name = "Latios";
+    Latios.Price = '0';
+    Latios.Small = "Latios.jpg";
+    gallery.push(Latios);
+    
+    var Latias = new Object();
+    Latias.Name = "Latias";
+    Latias.Price = '0';
+    Latias.Small = "Latias.jpg";
+    gallery.push(Latias);
+    
+    var Rayquaza = new Object();
+    Rayquaza.Name = "Rayquaza";
+    Rayquaza.Price = '0';
+    Rayquaza.Small = "Rayquaza.jpg";
+    gallery.push(Rayquaza);
+    
+    var Groudon = new Object();
+    Groudon.Name = "Groudon";
+    Groudon.Price = '0';
+    Groudon.Small = "Groudon.jpg";
+    gallery.push(Groudon);
+    
+    var Kyogre = new Object();
+    Kyogre.Name = "Kyogre";
+    Kyogre.Price = '0';
+    Kyogre.Small = "Kyogre.jpg";
+    gallery.push(Kyogre); 
+    
+    alert("aiyahh");
+    $('document').ready(function(){
+        $('#Latios').hover(function() {
+            $('#large img').attr('src', '' + Latios.Small);
+        });
+    });
+</script>
+
+    <h2> Pieces: </h2>
+    
+    <div class="thumbnail">
+        <div id="Latios"><img src="Latios.jpg"></div>
+        <div id="Latias"><img src="Latias.jpg"></div>
+        <div id="Rayquaza"><img src="Rayquaza.jpg"></div>
+        <div id="Groudon"><img src="Groudon.jpg"></div>
+        <div id="Kyogre"><img src="Kyogre.jpg"></div>
+    </div>
+        
+                
+    <div id="large">
+        <img src="Latios.jpg">
+    </div>
+</body>
+</html>
