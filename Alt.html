@@ -1,1 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style type="text/css">
+    h1 {
+        text-align: center;
+    }
+    a img {
+        width: 125px;
+        height: 100px;
+    }
+    
+    div img {
+        width: 375px;
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+    
+    <h1> Art Gallery </h1>
 
+<script>    
+    
+    let gallery = [];
+    let Latios = new Object();
+    Latios.name = "Latios"
+    Latios.price = 0;
+    Latios.small = Latios.jpg;
+    gallery.push(Latios);
+    
+    let Rayquaza = new Object();
+    Rayquaza.name = "Rayquaza"
+    Rayquaza.price = 0;
+    Rayquaza.small = Rayquaza.jpg;
+    gallery.push(Rayquaza);
+    
+    alert("aiyahh");
+    $('document').ready(function(){
+        $('nav').hover(function() {
+            $('#large img').attr('src', gallery.small);
+        });
+    });
+</script>
+
+    <h2> Pieces: </h2>
+    
+    <nav id="thumbnail">
+        <a href="#"><img src="Latios.jpg"</a>
+        <a href="#"><img src="Latias.jpg"</a>
+        <a href="#"><img src="Rayquaza.jpg"</a>
+        <a href="#"><img src="Groudon.jpg"</a>
+        <a href="#"><img src="Kyogre.jpg"</a>
+    </nav>
+        
+                
+    <div id="large">
+        <img src="Latios.jpg">
+    </div>
+</body>
+</html>
