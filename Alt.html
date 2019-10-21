@@ -24,6 +24,7 @@
 
 <script>    
     
+$('document').ready(function(){
     var gallery = [];
 
     var Latios = new Object();
@@ -58,15 +59,15 @@
     gallery.push(Kyogre);
     
     alert("aiyahh");
-    $('document').ready(function(){
-        for (art in gallery){
-            document.write(''+art.small+'<br>');
-        };
+
+    for (art in gallery){
+        document.write(''+art.small+'<br>');
+    };
+    document.write(''+gallery[0].small+gallery[0].price+gallery[0].name);
+    $('img').click(function(){
         document.write(''+gallery[0].small+gallery[0].price+gallery[0].name);
-        $('img').click(function(){
-            document.write(''+gallery[0].small+gallery[0].price+gallery[0].name);
-        });
     });
+});
 </script>
 
     <h2> Pieces: </h2>
