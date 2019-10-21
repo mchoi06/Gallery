@@ -62,7 +62,11 @@ $('document').ready(function(){
         $('#Latios').hover(function() {
             $('#large img').attr('src', '' + Latios.Small);
         });
+        $('#Latias').hover(function() {
+            $('#large img').attr('src', '' + Latias.Small);
+        });
     });
+});
 </script>
 
     <h2> Pieces: </h2>
