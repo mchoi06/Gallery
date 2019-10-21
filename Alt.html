@@ -61,7 +61,6 @@ $('document').ready(function(){
     alert("aiyahh");
 
     for (i=0;i<gallery.length;i++){
-        document.write(''+gallery[i].small+'<br>');
         $('img').click(function(){
             if (''+gallery[i].name == $('img').id) {
                 document.write('Title: ' + gallery[i].name);
