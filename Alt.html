@@ -55,10 +55,8 @@ $('document').ready(function(){
     Kyogre.Small = "Kyogre.jpg";
     gallery.push(Kyogre);            
     
-   /* alert(''+gallery[0].Small+gallery[0].Price+gallery[0].Name);	*/
     $('img').click(function(){
         alert(''+gallery[0].Small+gallery[0].Price+gallery[0].Name);
-        alert(''+window.gallery[0].Small);
         for (i=0;i<gallery.length;i++){
             if ($('img').src == (''+window.gallery[i].Small)) {
                 alert('Title: ' + window.gallery[i].Name);
