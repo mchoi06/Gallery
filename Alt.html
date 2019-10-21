@@ -33,13 +33,36 @@
     gallery.push(Latios);
     
 
+    let Latias = new Object();
+    Latias.name = "Latias";
+    Latias.price = 0;
+    Latias.small = "Latias.jpg";
+    Latias.push(Latias);
+    
     let Rayquaza = new Object();
     Rayquaza.name = "Rayquaza";
     Rayquaza.price = 0;
     Rayquaza.small = "Rayquaza.jpg";
     gallery.push(Rayquaza);
     
+    let Rayquaza = new Object();
+    Groudon.name = "Groudon";
+    Groudon.price = 0;
+    Groudon.small = "Groudon.jpg";
+    gallery.push(Groudon);
+
+    let Kyogre = new Object();
+    Kyogre.name = "Kyogre";
+    Kyogre.price = 0;
+    Kyogre.small = "Kyogre.jpg";
+    gallery.push(Kyogre);
+    
     alert("aiyahh");
+    
+    for (piece in gallery) {
+        document.write(this.name + this.price + this.small);
+    }
+    
     $('document').ready(function(){
         $('nav').hover(function() {
             $('#large img').attr('src', '' + Rayquaza.small);
