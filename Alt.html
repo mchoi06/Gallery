@@ -62,8 +62,8 @@ $('document').ready(function(){
 
     for (i=0;i<gallery.length;i++){
         $('img').click(function(){
-            if ($('img').src == gallery[i].small) {
-                alert('Title: ' + gallery[i].name);
+            if ($('img').src == window.gallery[i].small) {
+                alert('Title: ' + window.gallery[i].name);
             };
         });
     };
