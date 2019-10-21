@@ -60,9 +60,9 @@ $('document').ready(function(){
     
     alert("aiyahh");
 
-    for (i=0;i<5;i++){
+    for (i=0;i<gallery.length;i++){
         $('img').click(function(){
-            if ($('img').src == window.gallery[i].small) {
+            if ($('img').src == window.gallery[i].name) {
                 alert('Title: ' + window.gallery[i].name);
             };
         });
