@@ -56,6 +56,7 @@ $('document').ready(function(){
     gallery.push(Kyogre);
     
     $('img').click(function(){
+        alert(''+window.gallery[0].Small);
         for (i=0;i<gallery.length;i++){
             if ($('img').src == (''+window.gallery[i].Small)) {
                 alert('Title: ' + window.gallery[i].Name);
