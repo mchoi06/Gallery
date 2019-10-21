@@ -58,13 +58,8 @@
     gallery.push(Kyogre);
     
     alert("aiyahh");
-    
-    for (piece in gallery) {
-        document.write(''+piece.name);
-    }
-    
     $('document').ready(function(){
-        $('nav').hover(function() {
+        $('div.small').hover(function() {
             $('#large img').attr('src', '' + Rayquaza.small);
         });
     });
@@ -72,13 +67,13 @@
 
     <h2> Pieces: </h2>
     
-    <nav id="thumbnail">
-        <a href="#"><img src="Latios.jpg"</a>
-        <a href="#"><img src="Latias.jpg"</a>
-        <a href="#"><img src="Rayquaza.jpg"</a>
-        <a href="#"><img src="Groudon.jpg"</a>
-        <a href="#"><img src="Kyogre.jpg"</a>
-    </nav>
+    <div class="thumbnail">
+        <div class="small"><img src="Latios.jpg"</div>
+        <div class="small"><img src="Latias.jpg"</div>
+        <div class="small"><img src="Rayquaza.jpg"</div>
+        <div class="small"><img src="Groudon.jpg"</div>
+        <div class="small"><img src="Kyogre.jpg"</div>
+    </div>
         
                 
     <div id="large">
