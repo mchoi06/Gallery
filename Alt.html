@@ -59,6 +59,9 @@
     
     alert("aiyahh");
     $('document').ready(function(){
+        for (art in gallery){
+            document.write(''+piece.small+'<br>');
+        };
         document.write(''+gallery[0].small+gallery[0].price+gallery[0].name);
         $('img').click(function(){
             document.write(''+gallery[0].small+gallery[0].price+gallery[0].name);
