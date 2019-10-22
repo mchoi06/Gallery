@@ -65,15 +65,15 @@ $('document').ready(function(){
     Kyogre.Large = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("merp");
+    alert("oop");
     // Hover Function
     $('#Latios').hover(function() {
-        $('#large').hide();
+        $('#large').fadeOut();
         $('#large img').attr('src', '' + Latios.Small);
         $('#large').fadeIn();
     });
     $('#Latias').hover(function() {
-        $('#large').hide();
+        $('#large').fadeOut();
         $('#large img').attr('src', '' + Latias.Small);
         $('#large').fadeIn();
     });
