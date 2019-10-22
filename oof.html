@@ -25,7 +25,6 @@
     <h1> Art Gallery </h1>
 
 <script>    
-
 $('document').ready(function(){
     
     // Create Array of Objects
@@ -35,64 +34,54 @@ $('document').ready(function(){
     Latios.Name = "Latios";
     Latios.Price = '500';
     Latios.Small = "Latios.jpg";
-    Latios.Large = "Latios.jpg";
     gallery.push(Latios);
     
     var Latias = new Object();
     Latias.Name = "Latias";
     Latias.Price = '300';
     Latias.Small = "Latias.jpg";
-    Latias.Large = "Latias.jpg";
     gallery.push(Latias);
     
     var Rayquaza = new Object();
     Rayquaza.Name = "Rayquaza";
     Rayquaza.Price = '3000';
     Rayquaza.Small = "Rayquaza.jpg";
-    Rayquaza.Large = "Rayquaza.jpg";
     gallery.push(Rayquaza);
     
     var Groudon = new Object();
     Groudon.Name = "Groudon";
     Groudon.Price = '1800';
     Groudon.Small = "Groudon.jpg";
-    Groudon.Large = "Groudon.jpg";
     gallery.push(Groudon);
     
     var Kyogre = new Object();
     Kyogre.Name = "Kyogre";
     Kyogre.Price = '1600';
     Kyogre.Small = "Kyogre.jpg";
-    Kyogre.Large = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("ping");
+    alert("rawrXD");
     // Hover Function
-    $('#Latios').mouseenter(function() {
+    $('#Latios').hover(function() {
+        $('#large').hide();
         $('#large img').attr('src', '' + Latios.Small);
         $('#large').fadeIn();
     });
-    $('#Latios').mouseleave(function() {
-        $('#large').fadeOut();
-    });
-    $('#Latias').mouseenter(function() {
+    $('#Latias').hover(function() {
+        $('#large img').fadeIn();
         $('#large img').attr('src', '' + Latias.Small);
-        $('#large').fadeIn();
-    });
-    $('#Latias').mouseleave(function() {
-        $('#large').fadeOut();
     });
     $('#Rayquaza').hover(function() {
+        $('#large img').fadeIn();
         $('#large img').attr('src', '' + Rayquaza.Small);
-        $('#large').fadeIn();
     });
     $('#Groudon').hover(function() {
+        $('#large img').fadeIn();
         $('#large img').attr('src', '' + Groudon.Small);
-        $('#large').fadeIn();
     });
     $('#Kyogre').hover(function() {
+        $('#large img').fadeIn();
         $('#large img').attr('src', '' + Kyogre.Small);
-        $('#large').fadeIn();
     });
     
     // Click Function
@@ -115,7 +104,6 @@ $('document').ready(function(){
     $('#Kyogre').click(function() {
         $('#info5').html("<h3>Title: " + Kyogre.Name + "<br> Price: $" + Kyogre.Price + "</h3>");
         $('#info5').delay(5000).fadeOut();
-
     });
 });
 </script>
