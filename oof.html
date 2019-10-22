@@ -27,6 +27,8 @@
 <script>    
 
 $('document').ready(function(){
+    
+    // Create Array of Objects
     var gallery = [];
     
     var Latios = new Object();
@@ -59,7 +61,8 @@ $('document').ready(function(){
     Kyogre.Small = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("nope");
+    alert("poop");
+    // Hover Function
     $('document').ready(function(){
         $('#Latios').hover(function() {
             $('#large img').fadeIn("slow");
@@ -82,10 +85,21 @@ $('document').ready(function(){
             $('#large img').attr('src', '' + Kyogre.Small);
         });
     });
+    
+    // Click Function
+        $('#Latios').click(function() {
+            $('#info').html("Title: " + Latios.Name + "<br> Price: " + Latios.Price);
+        });
 });
 </script>
 
     <h2> Pieces: </h2>
+    
+    <div id="info"> </div>
+        
+    <div id="large">
+        <img src="Latios.jpg">
+    </div>
     
     <div class="thumbnail">
         <span id="Latios"><img src="Latios.jpg"></span>
@@ -96,9 +110,7 @@ $('document').ready(function(){
     </div>
         
                 
-    <div id="large">
-        <img src="Latios.jpg">
-    </div>
+
 
 </body>
 </html>
