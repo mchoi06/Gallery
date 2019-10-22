@@ -65,7 +65,7 @@ $('document').ready(function(){
     Kyogre.Large = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("rawr");
+    alert("beep");
     // Hover Function
     $('#Latios').mouseenter(function() {
         $('#large').hide();
@@ -96,23 +96,23 @@ $('document').ready(function(){
     // Click Function
     $('#Latios').click(function() {
         $('#info').html("<h3>Title: " + Latios.Name + "<br> Price: $" + Latios.Price + "</h3>");
-        $('#info').delay(5000).fadeOut();
+        $('#info').fadeIn('fast').delay(5000).fadeOut('fast');
     });
     $('#Latias').click(function() {
         $('#info').html("<h3>Title: " + Latias.Name + "<br> Price: $" + Latias.Price + "</h3>");
-        $('#info').delay(5000).fadeOut();
+        $('#info').fadeIn('fast').delay(5000).fadeOut('fast');
     });
     $('#Rayquaza').click(function() {
         $('#info').html("<h3>Title: " + Rayquaza.Name + "<br> Price: $" + Rayquaza.Price + "</h3>");
-        $('#info').delay(5000).fadeOut();
+        $('#info').fadeIn('fast').delay(5000).fadeOut('fast');
     });
     $('#Groudon').click(function() {
         $('#info').html("<h3>Title: " + Groudon.Name + "<br> Price: $" + Groudon.Price + "</h3>");
-        $('#info').delay(5000).fadeOut();
+        $('#info').fadeIn('fast').delay(5000).fadeOut('fast');
     });
     $('#Kyogre').click(function() {
         $('#info').html("<h3>Title: " + Kyogre.Name + "<br> Price: $" + Kyogre.Price + "</h3>");
-        $('#info').delay(5000).fadeOut();
+        $('#info').fadeIn('fast').delay(5000).fadeOut('fast');
     });
 });
 </script>
