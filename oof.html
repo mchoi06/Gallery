@@ -61,26 +61,26 @@ $('document').ready(function(){
     Kyogre.Small = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("pew");
+    alert("meep");
     // Hover Function
     $('#Latios').hover(function() {
-        $('#large img').fadeIn("slow");
+        $('#large img').toggle("slow");
         $('#large img').attr('src', '' + Latios.Small);
     });
     $('#Latias').hover(function() {
-        $('#large img').fadeIn("slow");
+        $('#large img').toggle("slow");
         $('#large img').attr('src', '' + Latias.Small);
     });
     $('#Rayquaza').hover(function() {
-        $('#large img').fadeIn("slow");
+        $('#large img').toggle("slow");
         $('#large img').attr('src', '' + Rayquaza.Small);
     });
     $('#Groudon').hover(function() {
-        $('#large img').fadeIn("slow");
+        $('#large img').toggle("slow");
         $('#large img').attr('src', '' + Groudon.Small);
     });
     $('#Kyogre').hover(function() {
-        $('#large img').fadeIn("slow");
+        $('#large img').toggle("slow");
         $('#large img').attr('src', '' + Kyogre.Small);
     });
     
@@ -111,11 +111,11 @@ $('document').ready(function(){
 
     <h2> Pieces: </h2>
     
-    <div id="info1"> </div>
-    <div id="info2"> </div>
-    <div id="info3"> </div>
-    <div id="info4"> </div>
-    <div id="info5"> </div>    
+    <div id="info1"></div>
+    <div id="info2"></div>
+    <div id="info3"></div>
+    <div id="info4"></div>
+    <div id="info5"></div>    
         
     <div id="large">
         <img src="Latios.jpg">
