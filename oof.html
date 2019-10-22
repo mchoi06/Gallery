@@ -68,20 +68,24 @@ $('document').ready(function(){
         $('#large').fadeIn();
     });
     $('#Latias').hover(function() {
-        $('#large img').fadeIn();
+        $('#large').hide();
         $('#large img').attr('src', '' + Latias.Small);
+        $('#large').fadeIn();
     });
     $('#Rayquaza').hover(function() {
-        $('#large img').fadeIn();
+        $('#large').hide();
         $('#large img').attr('src', '' + Rayquaza.Small);
+        $('#large').fadeIn();
     });
     $('#Groudon').hover(function() {
-        $('#large img').fadeIn();
+        $('#large').hide();
         $('#large img').attr('src', '' + Groudon.Small);
+        $('#large').fadeIn();
     });
     $('#Kyogre').hover(function() {
-        $('#large img').fadeIn();
+        $('#large').hide();
         $('#large img').attr('src', '' + Kyogre.Small);
+        $('#large').fadeIn();
     });
     
     // Click Function
@@ -109,6 +113,7 @@ $('document').ready(function(){
 </script>
 
     <h2> Pieces: </h2>
+    
     <div class="thumbnail">
         <span id="Latios"><img src="Latios.jpg"></span>
         <span id="Latias"><img src="Latias.jpg"></span>
@@ -116,6 +121,7 @@ $('document').ready(function(){
         <span id="Groudon"><img src="Groudon.jpg"></span>
         <span id="Kyogre"><img src="Kyogre.jpg"></span>
     </div>    
+    
     <div id="info1"></div>
     <div id="info2"></div>
     <div id="info3"></div>
