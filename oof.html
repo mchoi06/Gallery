@@ -66,15 +66,21 @@ $('document').ready(function(){
     Kyogre.Large = "Kyogre.jpg";
     gallery.push(Kyogre); 
     
-    alert("ding");
+    alert("ping");
     // Hover Function
-    $('#Latios').hover(function() {
+    $('#Latios').mouseenter(function() {
         $('#large img').attr('src', '' + Latios.Small);
         $('#large').fadeIn();
     });
-    $('#Latias').hover(function() {
+    $('#Latios').mouseleave(function() {
+        $('#large').fadeOut();
+    });
+    $('#Latias').mouseenter(function() {
         $('#large img').attr('src', '' + Latias.Small);
         $('#large').fadeIn();
+    });
+    $('#Latias').mouseleave(function() {
+        $('#large').fadeOut();
     });
     $('#Rayquaza').hover(function() {
         $('#large img').attr('src', '' + Rayquaza.Small);
